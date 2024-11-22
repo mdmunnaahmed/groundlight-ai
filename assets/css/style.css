@@ -117,7 +117,7 @@ h3 {
 }
 @media (max-width: 1399px) {
   .header .header-wrapper .logo img {
-    max-width: 180px;
+    max-width: 220px;
   }
 }
 .header .menu-toggle {
@@ -129,6 +129,11 @@ h3 {
   border-radius: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+@media (min-width: 992px) {
+  .header .menu-toggle {
+    display: none;
+  }
 }
 .header .menu-toggle .close {
   display: none;
