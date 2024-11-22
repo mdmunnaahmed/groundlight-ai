@@ -485,6 +485,15 @@ h3 {
   display: flex;
   gap: 28px;
 }
+@media (max-width: 1199px) {
+  .support-item .icon {
+    max-width: 42px;
+    flex-shrink: 0;
+  }
+  .support-item .icon img {
+    width: 100%;
+  }
+}
 .support-item .title {
   margin-top: 0;
   font-size: 34px;
