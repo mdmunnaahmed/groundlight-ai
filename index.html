@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groundlight AI</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="" class="logo"><img src="./assets/img/logo.png" alt=""></a>
+        <ul class="menu">
+          <li class="contain-logo"><a href="" class="logo"><img src="./assets/img/logo.png" alt=""></a></li>
+          <li class="menu-item"><a class="menu-link" href="">Docs</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Applications</a></li>
+          <li class="menu-item"><a class="menu-link" href="">API Reference</a></li>
+          <li class="menu-item"><a class="menu-link" href="">GitHub</a></li>
+          <li class="menu-item"><a href="" class="cmn-button outline">Signin</a></li>
+        </ul>
+        <button class="menu-toggle">
+          <img class="toggle" src="./assets/img/burger-menu-right-svgrepo-com.svg" alt="menu toggle">
+          <img class="close" src="./assets/img/close-svgrepo-com.svg" alt="menu close">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    const toggler = document.querySelector('.menu-toggle')
+    const menu = document.querySelector('.menu')
+    toggler.addEventListener('click', function () {
+      this.classList.toggle('active')
+      menu.classList.toggle('active')
+    })
+  </script>
+
+  <section class="banner-section">
+    <div class="container">
+      <div class="banner-wrapper">
+        <h1 class="title">Build custom computer vision apps - faster & more reliably</h1>
+        <div class="content">
+          <p>With Groundlight’s Python SDK, you don’t need to be a machine learning scientist to develop your own
+            computer vision application. Groundlight’s fully managed computer vision solution takes care of the ML so
+            you can focus on building.</p>
+          <div class="button-wrapper">
+            <a href="" class="cmn-button">Start building</a>
+            <a href="" class="cmn-button outline">See the docs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-section">
+    <div class="container">
+      <div class="feature-wrapper">
+        <div class="feature-item">
+          <div class="icon">
+            <img src="./assets/img/1.png" alt="img">
+          </div>
+          <div class="content">
+            <h3 class="title">AutoML</h3>
+            <p>Aspects such as selecting the model architecture, choosing hyperparameters, determining the training
+              dataset, or managing dataset labels are automated</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="icon">
+            <img src="./assets/img/2.png" alt="img">
+          </div>
+          <div class="content">
+            <h3 class="title">24/7 Human Annotation</h3>
+            <p>No need to label all your images yourself, Groundlight system provides annotation by humans, 24/7</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="icon">
+            <img src="./assets/img/3.png" alt="img">
+          </div>
+          <div class="content">
+            <h3 class="title">Fast Edge Inference</h3>
+            <p>On-premises deployment, so you can have real-time predictions without having to rely on the cloud</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="integration-compatibility">
+    <div class="container">
+      <h2 class="section-title">Groundlight <span style="color: #FF00D4;">integrations</span> and <span
+          style="color: #991EFF;">compatibility</span></h2>
+      <div class="integration-compatibility-wrapper">
+        <div class="left-content">
+          <p>Groundlight is compatible across major development platforms and available through a REST API or Python
+            SDK. Enjoy easy deployments using Arduino, Raspberry Pi, or any number of hardware kits.</p>
+          <div class="logos-wrapper">
+            <img src="./assets/img/nvidia.png" alt="icon">
+            <img src="./assets/img/python.png" alt="icon">
+            <img src="./assets/img/arduino.png" alt="icon">
+            <img src="./assets/img/ras.png" alt="icon">
+            <img src="./assets/img/github.png" alt="icon">
+            <img src="./assets/img/demo.png" alt="icon">
+            <img src="./assets/img/aws.png" alt="icon">
+            <img src="./assets/img/u.png" alt="icon">
+          </div>
+        </div>
+        <span class="pipe"></span>
+        <div class="right-content">
+          <div class="integration-compatibility-grid">
+            <div class="integration-compatibility-item">
+              <h3 class="title">Python SDK</h3>
+              <p>With only a few lines of code, you can have custom computer vision inside your application.</p>
+              <a href="" class="cmn-button outline">Learn More</a>
+            </div>
+            <div class="integration-compatibility-item">
+              <h3 class="title">API</h3>
+              <p>API to let you access your models in the cloud - no need to run your own models or hardware.</p>
+              <a href="" class="cmn-button outline">Learn More</a>
+            </div>
+            <div class="integration-compatibility-item">
+              <h3 class="title">Fast Edge Inference</h3>
+              <p>We offer specialized hardware for local inference. Reduce latency, cost, network bandwidth, and energy.
+              </p>
+              <a href="" class="cmn-button outline">Learn More</a>
+            </div>
+            <div class="integration-compatibility-item">
+              <h3 class="title">ROS</h3>
+              <p>Seamlessly integrate AI-driven perception into ROS2 projects, enabling natural language queries and
+                real-time decision-making for smarter, more adaptable robotic systems.</p>
+              <a href="" class="cmn-button outline">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="code-section">
+    <div class="container">
+      <h2 class="section-title">Build a <span style="color: #991EFF;">working computer vision application</span> in just
+        a few lines of code:</h2>
+      <img src="./assets/img/CodeBlock.png" alt="code block" class="codeblock-img">
+    </div>
+  </section>
+
+  <section class="support-section">
+    <div class="container">
+      <h2 class="section-title"><span style="color: #EACC8B;">Lorem ipsum dolor sit amet</span>, consectetur adipiscing
+        elit.</h2>
+      <div class="support-grid">
+        <div class="support-item">
+          <div class="icon">
+            <img src="./assets/img/youtube.png" alt="youtube">
+          </div>
+          <div class="content">
+            <h3 class="title">YouTube</h3>
+            <p> Nulla sit amet tincidunt odio. Vivamus sit amet porttitor turpis, feugiat mattis risus. </p>
+            <a href="" class="cmn-button">Go to YouTube</a>
+          </div>
+        </div>
+        <div class="support-item">
+          <div class="icon">
+            <img src="./assets/img/x.png" alt="youtube">
+          </div>
+          <div class="content">
+            <h3 class="title">X</h3>
+            <p> Nulla sit amet tincidunt odio. Vivamus sit amet porttitor turpis, feugiat mattis risus. </p>
+            <a href="" class="cmn-button">Follow us on X</a>
+          </div>
+        </div>
+        <div class="support-item">
+          <div class="icon">
+            <img src="./assets/img/support.png" alt="youtube">
+          </div>
+          <div class="content">
+            <h3 class="title">Support</h3>
+            <p> Nulla sit amet tincidunt odio. Vivamus sit amet porttitor turpis, feugiat mattis risus. </p>
+            <a href="" class="cmn-button">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-widget">
+          <h3 class="title">Documentation</h3>
+          <ul class="footer-links">
+            <li><a href="">Getting Started</a></li>
+            <li><a href="">Building Applications</a></li>
+            <li><a href="">Installation</a></li>
+          </ul>
+        </div>
+        <div class="footer-widget">
+          <h3 class="title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="">About</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Sign in</a></li>
+          </ul>
+        </div>
+        <div class="footer-widget">
+          <h3 class="title">Code</h3>
+          <ul class="footer-links">
+            <li><a href="">GitHub</a></li>
+            <li><a href="">Python SDK</a></li>
+            <li><a href="">Video Straming</a></li>
+            <li><a href="">Arduino</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">Copyright © 2024 Groundlight AI.</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
