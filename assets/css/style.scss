@@ -66,6 +66,7 @@ body {
 }
 img {
   vertical-align: middle;
+  max-width: 100%;
 }
 a {
   color: inherit;
@@ -165,8 +166,9 @@ h3 {
       display: inline-block;
       height: max-content;
       img {
+        width: 246px;
         @include breakpoint(max-xxl) {
-          max-width: 220px;
+          width: 220px;
         }
       }
     }

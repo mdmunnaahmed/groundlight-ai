@@ -14,6 +14,7 @@ body {
 
 img {
   vertical-align: middle;
+  max-width: 100%;
 }
 
 a {
@@ -115,9 +116,12 @@ h3 {
   height: -moz-max-content;
   height: max-content;
 }
+.header .header-wrapper .logo img {
+  width: 246px;
+}
 @media (max-width: 1399px) {
   .header .header-wrapper .logo img {
-    max-width: 220px;
+    width: 220px;
   }
 }
 .header .menu-toggle {
