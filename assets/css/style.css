@@ -139,10 +139,10 @@ h3 {
     display: none;
   }
 }
-.header .menu-toggle .close {
+.header .menu-toggle .closee {
   display: none;
 }
-.header .menu-toggle.active .close {
+.header .menu-toggle.active .closee {
   display: block;
 }
 .header .menu-toggle.active .toggle {
@@ -586,4 +586,51 @@ h3 {
 .copyright {
   text-align: center;
   margin-top: 40px;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 8px 16px;
+  background-color: #262626;
+  border-radius: 4px 4px 0 0;
+}
+.code-header .title {
+  font-weight: 500;
+}
+
+.code-container {
+  display: flex;
+  background-color: #343434;
+  color: #dcdcdc;
+  border-radius: 0 0 4px 4px;
+  overflow: auto;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.line-numbers {
+  text-align: right;
+  margin-right: 10px;
+  color: #888;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding-right: 10px;
+  padding-left: 8px;
+  border-right: 1px solid #444;
+  padding-top: 10px;
+}
+
+.line-numbers div {
+  line-height: 1.5;
+}
+
+.code {
+  white-space: pre;
+  padding: 10px;
 }

@@ -16,15 +16,18 @@
         <a href="" class="logo"><img src="./assets/img/dev_logo_dark.svg" alt="logo"></a>
         <ul class="menu">
           <li class="contain-logo"><a href="" class="logo"><img src="./assets/img/logo.png" alt=""></a></li>
-          <li class="menu-item"><a class="menu-link" href="https://code.groundlight.ai/python-sdk/docs/getting-started">Docs</a></li>
-          <li class="menu-item"><a class="menu-link" href="https://code.groundlight.ai/python-sdk/docs/building-applications">Applications</a></li>
-          <li class="menu-item"><a class="menu-link" href="https://code.groundlight.ai/python-sdk/api-reference-docs/">API Reference</a></li>
+          <li class="menu-item"><a class="menu-link"
+              href="https://code.groundlight.ai/python-sdk/docs/getting-started">Docs</a></li>
+          <li class="menu-item"><a class="menu-link"
+              href="https://code.groundlight.ai/python-sdk/docs/building-applications">Applications</a></li>
+          <li class="menu-item"><a class="menu-link"
+              href="https://code.groundlight.ai/python-sdk/api-reference-docs/">API Reference</a></li>
           <li class="menu-item"><a class="menu-link" href="https://github.com/groundlight/python-sdk">GitHub</a></li>
           <li class="menu-item"><a href="https://dashboard.groundlight.ai/" class="cmn-button outline">Login</a></li>
         </ul>
         <button class="menu-toggle">
           <img class="toggle" src="./assets/img/burger-menu-right-svgrepo-com.svg" alt="menu toggle">
-          <img class="close" src="./assets/img/close-svgrepo-com.svg" alt="menu close">
+          <img class="closee" src="./assets/img/close-svgrepo-com.svg" alt="menu close">
         </button>
       </div>
     </div>
@@ -48,8 +51,10 @@
             computer vision application. Groundlight’s fully managed computer vision solution takes care of the ML so
             you can focus on building.</p>
           <div class="button-wrapper">
-            <a href="https://login.groundlight.ai/oauth2/register?tenantId=aad3d06b-ef57-454e-b952-91e9d3d347b1&client_id=ac8aac5d-c278-4c14-a549-e039f5ac54bb&nonce=&pendingIdPLinkId=&redirect_uri=https%3A%2F%2Fdashboard.groundlight.ai%2Fdevice-api%2Fauthz%2Fcallback&response_mode=&response_type=code&scope=openid%20profile%20email%20offline_access&state=&timezone=America%2FBogota&metaData.device.name=Windows%20Chrome&metaData.device.type=BROWSER&code_challenge=&code_challenge_method=&user_code=" class="cmn-button">Start building</a>
-            <a href="https://code.groundlight.ai/python-sdk/docs/getting-started" class="cmn-button outline">See the docs</a>
+            <a href="https://login.groundlight.ai/oauth2/register?tenantId=aad3d06b-ef57-454e-b952-91e9d3d347b1&client_id=ac8aac5d-c278-4c14-a549-e039f5ac54bb&nonce=&pendingIdPLinkId=&redirect_uri=https%3A%2F%2Fdashboard.groundlight.ai%2Fdevice-api%2Fauthz%2Fcallback&response_mode=&response_type=code&scope=openid%20profile%20email%20offline_access&state=&timezone=America%2FBogota&metaData.device.name=Windows%20Chrome&metaData.device.type=BROWSER&code_challenge=&code_challenge_method=&user_code="
+              class="cmn-button">Start building</a>
+            <a href="https://code.groundlight.ai/python-sdk/docs/getting-started" class="cmn-button outline">See the
+              docs</a>
           </div>
         </div>
       </div>
@@ -116,12 +121,14 @@
             <div class="integration-compatibility-item">
               <h3 class="title">Python SDK</h3>
               <p>With only a few lines of code, you can have custom computer vision inside your application.</p>
-              <a href="https://code.groundlight.ai/python-sdk/docs/getting-started" class="cmn-button outline">Learn More</a>
+              <a href="https://code.groundlight.ai/python-sdk/docs/getting-started" class="cmn-button outline">Learn
+                More</a>
             </div>
             <div class="integration-compatibility-item">
               <h3 class="title">API</h3>
               <p>API to let you access your models in the cloud - no need to run your own models or hardware.</p>
-              <a href="https://code.groundlight.ai/python-sdk/docs/getting-started " class="cmn-button outline">Learn More</a>
+              <a href="https://code.groundlight.ai/python-sdk/docs/getting-started " class="cmn-button outline">Learn
+                More</a>
             </div>
             <div class="integration-compatibility-item">
               <h3 class="title">Fast Edge Inference</h3>
@@ -145,7 +152,33 @@
     <div class="container">
       <h2 class="section-title">Build a <span style="color: #991EFF;">working computer vision application</span> in just
         a few lines of code:</h2>
-      <img src="./assets/img/CodeBlock.png" alt="code block" class="codeblock-img">
+
+      <div class="code-header">
+        <div class="title">Code Block</div>
+        <div class="code-lang">PYTHON</div>
+      </div>
+      <div class="code-container">
+        <div class="line-numbers" id="line-numbers"></div>
+        <div class="code" id="code">Install necessary dependencies:
+pip install groundlight framegrab
+
+import framegrab
+import groundlight
+
+gl = groundlight.Groundlight()
+det = gl.get_or_create_detector(name="doorway", query="Is the doorway open?")</div>
+      </div>
+      <script>
+        // Get references to the code and line-numbers containers
+        const codeElement = document.getElementById("code");
+        const lineNumbersElement = document.getElementById("line-numbers");
+    
+        // Get the number of lines in the code block
+        const codeLines = codeElement.innerText.split("\n");
+    
+        // Generate line numbers dynamically
+        lineNumbersElement.innerHTML = codeLines.map((_, index) => `<div>${index + 1}</div>`).join("");
+      </script>
     </div>
   </section>
 
@@ -194,7 +227,8 @@
           <h3 class="title">Documentation</h3>
           <ul class="footer-links">
             <li><a href="https://code.groundlight.ai/python-sdk/docs/getting-started">Getting Started</a></li>
-            <li><a href="https://code.groundlight.ai/python-sdk/docs/building-applications">Building Applications</a></li>
+            <li><a href="https://code.groundlight.ai/python-sdk/docs/building-applications">Building Applications</a>
+            </li>
             <li><a href="https://code.groundlight.ai/python-sdk/docs/installation">Installation</a></li>
           </ul>
         </div>
